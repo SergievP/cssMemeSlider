@@ -73,13 +73,15 @@ html {
 .text_carousel_wrapper {
   width: 15vw;
   overflow: hidden;
+  line-height: 16px;
+  font-size: 1.5rem;
 }
 
 .text_carousel {
   display: flex;
   flex-direction: row;
   transition: transform 1s;
-  gap: 35%;
+  gap: 60%;
   justify-content: start;
   padding-left: 15%;
 }
@@ -142,20 +144,110 @@ html {
 .circle:hover {
   opacity: 1;
 }
+@media screen and (max-width:1440px) {
+  .text_carousel_wrapper {
+    font-size: 1.5rem;
+    line-height: 16px;
+  }
 
-@media screen and (max-width:500px) {
-  .navigation {
-      justify-content: center;
+  .text_carousel {
+    gap: 7vw;
+  }
+}
+@media screen and (max-width:1110px) {
+  .text_carousel_wrapper {
+    font-size: 1.3rem;
   }
 }
 
+@media screen and (max-width:970px) {
+  .text_carousel_wrapper {
+    font-size: 1.1rem;
+  }
+}
 
+@media screen and (max-width:865px) {
+  .text_carousel {
+    gap: 6vw;
+  }
+}
 
-@media screen and (max-width:500px) {
-  .bottom-slider {
-      flex-direction: column-reverse;
+@media screen and (max-width:720px) {
+  .text_carousel {
+    gap: 4vw;
   }
   .text_carousel_wrapper {
+    width: 14vw;
+  }
+}
+@media screen and (max-width: 645px) {
+  .text_carousel_wrapper {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .text_carousel {
+    gap: 30%;
+  }
+}
+@media screen and (max-width: 591px) {
+  .text_carousel_wrapper {
+    font-size: 0.9rem;
+  }
+  .text_carousel {
+    gap: 35%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .text_carousel {
+    gap: 30%;
+  }
+}
+@media screen and (max-width: 532px) {
+  .text_carousel {
+    gap: 28%;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  .text_carousel_wrapper {
+    font-size: 0.8rem;
+  }
+
+  .text_carousel {
+    gap: 35%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .text_carousel_wrapper {
+    font-size: 0.6rem;
+  }
+
+  .text_carousel {
+    gap: 25%;
+  }
+
+  .navigation {
+      justify-content: center;
+  }
+
+  .bottom-slider {
+    flex-direction: column-reverse;
+  }
+
+  .text_carousel_wrapper {
     margin-top: 2%;
+  }
+  #btn-3:checked ~.carousel {
+    transform: translateX(-160.8vw);
+  }
+  
+  #btn-4:checked ~.carousel {
+    transform: translateX(-243.5vw);
+  }
+  
+  #btn-5:checked ~.carousel {
+    transform: translateX(-328vw);
   }
 }
