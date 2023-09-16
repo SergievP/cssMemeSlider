@@ -1,1 +1,161 @@
+html {
+    background-color: #0D1821;
+}
 
+.mem-slider {
+  width: 100%;
+  background-color: #86dad0;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.slider {
+  padding-top: 3%;
+  width: 70%;
+  overflow: hidden;
+}
+
+.btn {
+  display: none;
+}
+
+.carousel {
+  padding-left: 15%;
+  display: flex;
+  flex-direction: row;
+  transition: transform 1s;
+  justify-content: start;
+  gap: 35%
+}
+
+.carousel__img {
+  box-sizing: border-box;
+  height: 40vw; 
+}
+
+.carousel__img-5 {
+  width: 100%;
+}
+
+#btn-1:checked ~.carousel {
+  transform: translateX(0vw);
+}
+  
+#btn-2:checked ~ .carousel {
+  transform: translateX(-70vw);
+}
+
+#btn-3:checked ~.carousel {
+  transform: translateX(-155.8vw);
+}
+
+#btn-4:checked ~.carousel {
+  transform: translateX(-230.5vw);
+}
+
+#btn-5:checked ~.carousel {
+  transform: translateX(-300vw);
+}
+  
+@media screen and (max-width:500px) {
+  .slider {
+      width: 93.1%
+  }
+}
+
+.bottom-slider {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text_carousel_wrapper {
+  width: 15vw;
+  overflow: hidden;
+}
+
+.text_carousel {
+  display: flex;
+  flex-direction: row;
+  transition: transform 1s;
+  gap: 35%;
+  justify-content: start;
+  padding-left: 15%;
+}
+
+.text_carousel_text {
+  display: inline;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+#btn-1:checked ~ .bottom-slider .text_carousel {
+  transform: translateX(0vw);
+}
+  
+#btn-2:checked ~ .bottom-slider .text_carousel {
+  transform: translateX(-12vw);
+}
+
+#btn-3:checked ~ .bottom-slider .text_carousel {
+  transform: translateX(-26vw);
+}
+
+#btn-4:checked ~ .bottom-slider .text_carousel {
+  transform: translateX(-38vw);
+}
+
+#btn-5:checked ~ .bottom-slider .text_carousel {
+  transform: translateX(-54vw);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .5;
+  width: 1.2vw;
+  height: 1.2vw;
+  background-color: white;
+  margin: 0.45vw;
+  border-radius: 50%;
+  transition: opacity .5s;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .bottom-slider .circle-1,
+#btn-2:checked ~ .bottom-slider .circle-2,
+#btn-3:checked ~ .bottom-slider .circle-3,
+#btn-4:checked ~ .bottom-slider .circle-4,
+#btn-5:checked ~ .bottom-slider .circle-5 {
+  background-color: #86dad0;
+  border: 2px solid #fff;
+}
+
+.circle:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width:500px) {
+  .navigation {
+      justify-content: center;
+  }
+}
+
+
+
+@media screen and (max-width:500px) {
+  .bottom-slider {
+      flex-direction: column-reverse;
+  }
+  .text_carousel_wrapper {
+    margin-top: 2%;
+  }
+}

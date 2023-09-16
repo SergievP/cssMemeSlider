@@ -1,60 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSMemeSlider</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main class="slider">
-        <div class="slider__imgs">
-            <img src="img/1.jpeg" alt="bayan1" class="slider__img">
-            <img src="img/2.jpeg" alt="bayan2" class="slider__img">
-            <img src="img/3.jpeg" alt="bayan3" class="slider__img">
-            <img src="img/4.jpeg" alt="bayan4" class="slider__img">
-            <img src="img/5.jpeg" alt="bayan5" class="slider__img">
-        </div>
-        <div class="slider__nav">
-           <div class="nav__element">
-                <div class="nav__wrapper"></div>
-                <button class="nav__circle"></button>
-           </div>
-
-            <div class="nav__element">
-                 <div class="nav__wrapper"></div>
-                 <button class="nav__circle"></button>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSSMemeSlider</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="main">
+            <div class="mem-slider">
+                <div class="slider">
+                    <input id="btn-1" type="radio" name="nav" class="btn" checked>
+                    <input id="btn-2" type="radio" name="nav" class="btn">
+                    <input id="btn-3" type="radio" name="nav" class="btn">
+                    <input id="btn-4" type="radio" name="nav" class="btn">
+                    <input id="btn-5" type="radio" name="nav" class="btn">
+                    <div class="carousel">
+                        <img class="carousel__img carousel__img-1" src="img/1.jpeg">
+                        <img class="carousel__img carousel__img-2" src="img/2.jpeg">
+                        <img class="carousel__img carousel__img-3" src="img/3.jpeg">
+                        <img class="carousel__img carousel__img-4" src="img/4.jpeg">
+                        <img class="carousel__img carousel__img-5" src="img/5.jpeg">
+                    </div>
+                    <div class="bottom-slider">
+                        <div class="text_carousel_wrapper">
+                            <div class="text_carousel">
+                                <div class="text_carousel_text">Шутка 1</div>
+                                <div class="text_carousel_text">Шутка 2</div>
+                                <div class="text_carousel_text">Шутка 3</div>
+                                <div class="text_carousel_text">Шутка 4</div>
+                                <div class="text_carousel_text">Шутка 5</div>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <label for="btn-1"><div class="circle circle-1"></div></label>
+                            <label for="btn-2"><div class="circle circle-2"></div></label>
+                            <label for="btn-3"><div class="circle circle-3"></div></label>
+                            <label for="btn-4"><div class="circle circle-4"></div></label>
+                            <label for="btn-5"><div class="circle circle-5"></div></label>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="nav__element">
-                 <div class="nav__wrapper"></div>
-                 <button class="nav__circle"></button>
-            </div>
-
-            <div class="nav__element">
-                 <div class="nav__wrapper"></div>
-                 <button class="nav__circle"></button>
-            </div>
-
-            <div class="nav__element">
-                 <div class="nav__wrapper"></div>
-                 <button class="nav__circle"></button>
-            </div>
-
-            <div class="nav__element">
-                <div class="nav__wrapper"></div>
-                <button class="nav__circle"></button>
-           </div>
-
-         </div>
-
-        <div class="slider__descr">
-            <div class="descr__element descr__pict-1">Hey</div>
-            <div class="descr__element descr__pict-2">Hoy</div>
-            <div class="descr__element descr__pict-3">Huy</div>
-            <div class="descr__element descr__pict-4">Hiy</div>
-            <div class="descr__element descr__pict-5">Hay</div>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 </html>
