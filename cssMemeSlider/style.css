@@ -234,16 +234,19 @@ body {
     width: 14vw;
   }
 }
+
 @media screen and (max-width: 645px) {
   .text-carousel_wrapper {
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 620px) {
   .text-carousel {
     gap: 30%;
   }
 }
+
 @media screen and (max-width: 591px) {
   .text-carousel_wrapper {
     font-size: 0.9rem;
@@ -252,11 +255,13 @@ body {
     gap: 35%;
   }
 }
+
 @media screen and (max-width: 560px) {
   .text-carousel {
     gap: 30%;
   }
 }
+
 @media screen and (max-width: 532px) {
   .text-carousel {
     gap: 28%;
