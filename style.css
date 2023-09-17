@@ -2,6 +2,11 @@ html {
     background-color: #0D1821;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .mem-slider {
   width: 100%;
   background-color: #86dad0;
@@ -70,14 +75,14 @@ html {
   justify-content: space-between;
 }
 
-.text_carousel_wrapper {
+.text-carousel_wrapper {
   width: 15vw;
   overflow: hidden;
   line-height: 16px;
   font-size: 1.5rem;
 }
 
-.text_carousel {
+.text-carousel {
   display: flex;
   flex-direction: row;
   transition: transform 1s;
@@ -86,29 +91,29 @@ html {
   padding-left: 15%;
 }
 
-.text_carousel_text {
+.text-carousel_text {
   display: inline;
   box-sizing: border-box;
   white-space: nowrap;
 }
 
-#btn-1:checked ~ .bottom-slider .text_carousel {
+#btn-1:checked ~ .bottom-slider .text-carousel {
   transform: translateX(0vw);
 }
   
-#btn-2:checked ~ .bottom-slider .text_carousel {
+#btn-2:checked ~ .bottom-slider .text-carousel {
   transform: translateX(-12vw);
 }
 
-#btn-3:checked ~ .bottom-slider .text_carousel {
+#btn-3:checked ~ .bottom-slider .text-carousel {
   transform: translateX(-26vw);
 }
 
-#btn-4:checked ~ .bottom-slider .text_carousel {
+#btn-4:checked ~ .bottom-slider .text-carousel {
   transform: translateX(-38vw);
 }
 
-#btn-5:checked ~ .bottom-slider .text_carousel {
+#btn-5:checked ~ .bottom-slider .text-carousel {
   transform: translateX(-54vw);
 }
 
@@ -144,88 +149,140 @@ html {
 .circle:hover {
   opacity: 1;
 }
+@media screen and (max-width:1920px) {
+  .text-carousel_wrapper {
+    font-size: 2.5rem;
+    line-height: 30px;
+  }
+
+  .text-carousel {
+    gap: 6vw;
+  }
+}
+
+@media screen and (max-width:1820px) {
+  .text-carousel_wrapper {
+    font-size: 2.3rem;
+
+  }
+
+  .text-carousel {
+    gap: 6vw;
+  }
+}
+
+
+@media screen and (max-width:1700px) {
+  .text-carousel_wrapper {
+    font-size: 2.1rem;
+
+  }
+}
+
+@media screen and (max-width:1600px) {
+  .text-carousel_wrapper {
+    font-size: 1.9rem;
+  }
+}
+
 @media screen and (max-width:1440px) {
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     font-size: 1.5rem;
     line-height: 16px;
   }
 
-  .text_carousel {
+  .text-carousel {
     gap: 7vw;
   }
 }
+
 @media screen and (max-width:1110px) {
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width:970px) {
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width:865px) {
-  .text_carousel {
+  .text-carousel {
     gap: 6vw;
   }
 }
 
+@media screen and (max-width:800px) {
+  .text-carousel {
+    gap: 5.5vw;
+  }
+}
+
+@media screen and (max-width:764px) {
+  .text-carousel {
+    gap: 5vw;
+  }
+}
+
 @media screen and (max-width:720px) {
-  .text_carousel {
+  .text-carousel {
     gap: 4vw;
   }
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     width: 14vw;
   }
 }
 @media screen and (max-width: 645px) {
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 620px) {
-  .text_carousel {
+  .text-carousel {
     gap: 30%;
   }
 }
 @media screen and (max-width: 591px) {
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     font-size: 0.9rem;
   }
-  .text_carousel {
+  .text-carousel {
     gap: 35%;
   }
 }
 @media screen and (max-width: 560px) {
-  .text_carousel {
+  .text-carousel {
     gap: 30%;
   }
 }
 @media screen and (max-width: 532px) {
-  .text_carousel {
+  .text-carousel {
     gap: 28%;
   }
 }
 
 @media screen and (max-width: 514px) {
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     font-size: 0.8rem;
   }
 
-  .text_carousel {
+  .text-carousel {
     gap: 35%;
   }
 }
 
 @media screen and (max-width:500px) {
-  .text_carousel_wrapper {
-    font-size: 0.6rem;
+  .carousel {
+    gap: 40%
+  }
+  .text-carousel_wrapper {
+    font-size: 0.7rem;
   }
 
-  .text_carousel {
-    gap: 25%;
+  .text-carousel {
+    gap: 5vw;
   }
 
   .navigation {
@@ -236,18 +293,76 @@ html {
     flex-direction: column-reverse;
   }
 
-  .text_carousel_wrapper {
+  .text-carousel_wrapper {
     margin-top: 2%;
   }
+  #btn-1:checked ~.carousel {
+    transform: translateX(10vw);
+  }
+
+  #btn-2:checked ~.carousel {
+    transform: translateX(-70.8vw);
+  }
+
   #btn-3:checked ~.carousel {
-    transform: translateX(-160.8vw);
+    transform: translateX(-168vw);
   }
   
   #btn-4:checked ~.carousel {
-    transform: translateX(-243.5vw);
+    transform: translateX(-255vw);
   }
   
   #btn-5:checked ~.carousel {
-    transform: translateX(-328vw);
+    transform: translateX(-347vw);
+  }
+}
+
+@media screen and (max-width:465px) {
+  .text-carousel {
+    gap: 4.3vw;
+  }
+}
+
+@media screen and (max-width:440px) {
+
+  .text-carousel {
+    gap: 3.8vw;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .text-carousel_wrapper {
+    font-size: 0.65rem;
+  }
+
+  .text-carousel {
+    gap: 4vw;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .text-carousel_wrapper {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width:365px) {
+  .text-carousel {
+    gap: 3.3vw;
+  }
+}
+
+@media screen and (max-width:355px) {
+  .text-carousel_wrapper {
+    font-size: 0.55rem;
+  }
+  .text-carousel {
+    gap: 4vw;
+  }
+}
+
+@media screen and (max-width:332px) {
+  .text-carousel {
+    gap: 3vw;
   }
 }
